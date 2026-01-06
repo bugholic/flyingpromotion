@@ -1,10 +1,48 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight, Sparkles, Rocket, Megaphone, Target, TrendingUp } from "lucide-react";
 import { Button } from "./ui/button";
-import rocketIcon from "@/assets/rocket-3d.png";
-import megaphoneIcon from "@/assets/megaphone-3d.png";
-import targetIcon from "@/assets/target-3d.png";
-import chartIcon from "@/assets/chart-3d.png";
+
+const FloatingIcon = ({ 
+  icon: Icon, 
+  className, 
+  delay = 0,
+  gradient = "from-primary to-accent"
+}: { 
+  icon: React.ElementType; 
+  className: string; 
+  delay?: number;
+  gradient?: string;
+}) => (
+  <motion.div
+    className={`absolute ${className}`}
+    animate={{ 
+      y: [0, -20, 0],
+      rotateY: [0, 15, 0],
+      rotateX: [0, -10, 0],
+    }}
+    transition={{ 
+      duration: 6, 
+      repeat: Infinity, 
+      ease: "easeInOut",
+      delay 
+    }}
+    style={{ transformStyle: 'preserve-3d', perspective: 1000 }}
+  >
+    <div className={`relative p-4 md:p-6 rounded-2xl bg-gradient-to-br ${gradient} shadow-2xl`}
+      style={{
+        boxShadow: '0 25px 50px -12px rgba(0,0,0,0.25), 0 0 40px rgba(255,107,0,0.3)',
+        transform: 'rotateX(10deg) rotateY(-5deg)',
+        transformStyle: 'preserve-3d',
+      }}
+    >
+      {/* Glass reflection effect */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/30 via-transparent to-transparent" />
+      {/* Bottom shadow for 3D depth */}
+      <div className="absolute -bottom-2 left-2 right-2 h-4 bg-black/20 blur-lg rounded-full" />
+      <Icon className="w-8 h-8 md:w-12 md:h-12 text-white relative z-10" strokeWidth={1.5} />
+    </div>
+  </motion.div>
+);
 
 const HeroSection = () => {
   return (
@@ -20,33 +58,29 @@ const HeroSection = () => {
       </div>
 
       {/* Floating 3D Icons */}
-      <motion.img
-        src={rocketIcon}
-        alt="3D Rocket"
-        className="absolute top-32 right-[15%] w-24 h-24 md:w-32 md:h-32 icon-3d hidden md:block"
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      <FloatingIcon 
+        icon={Rocket} 
+        className="top-32 right-[15%] hidden md:block" 
+        delay={0}
+        gradient="from-orange-500 to-red-500"
       />
-      <motion.img
-        src={megaphoneIcon}
-        alt="3D Megaphone"
-        className="absolute bottom-40 left-[10%] w-20 h-20 md:w-28 md:h-28 icon-3d hidden md:block"
-        animate={{ y: [0, -15, 0], rotate: [0, 5, 0] }}
-        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+      <FloatingIcon 
+        icon={Megaphone} 
+        className="bottom-40 left-[10%] hidden md:block" 
+        delay={1}
+        gradient="from-amber-500 to-orange-600"
       />
-      <motion.img
-        src={targetIcon}
-        alt="3D Target"
-        className="absolute top-48 left-[8%] w-16 h-16 md:w-24 md:h-24 icon-3d hidden md:block"
-        animate={{ y: [0, -12, 0], rotate: [0, -5, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+      <FloatingIcon 
+        icon={Target} 
+        className="top-48 left-[8%] hidden md:block" 
+        delay={0.5}
+        gradient="from-orange-400 to-rose-500"
       />
-      <motion.img
-        src={chartIcon}
-        alt="3D Chart"
-        className="absolute bottom-32 right-[12%] w-20 h-20 md:w-28 md:h-28 icon-3d hidden md:block"
-        animate={{ y: [0, -18, 0] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+      <FloatingIcon 
+        icon={TrendingUp} 
+        className="bottom-32 right-[12%] hidden md:block" 
+        delay={2}
+        gradient="from-yellow-500 to-orange-500"
       />
 
       <div className="container mx-auto px-4 relative z-10">

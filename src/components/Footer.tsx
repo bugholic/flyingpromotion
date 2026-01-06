@@ -139,7 +139,7 @@ const Footer = () => {
                 Subscribe to our newsletter for the latest marketing insights.
               </p>
             </div>
-            <div className="flex gap-3 w-full md:w-auto">
+            <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
@@ -148,7 +148,7 @@ const Footer = () => {
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="px-6 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-xl hover:shadow-lg transition-shadow"
+                className="px-6 py-3 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-xl hover:shadow-lg transition-shadow whitespace-nowrap"
               >
                 Subscribe
               </motion.button>

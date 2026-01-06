@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import logo from "@/assets/logo.jpg";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -21,16 +22,18 @@ const Navbar = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className="fixed top-0 left-0 right-0 z-50 glass"
     >
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <motion.a
             href="#home"
-            className="flex items-center gap-2"
-            whileHover={{ scale: 1.05 }}
+            className="flex items-center"
+            whileHover={{ scale: 1.02 }}
           >
-            <span className="text-2xl font-heading font-bold gradient-text">
-              Flying Promotionn
-            </span>
+            <img 
+              src={logo} 
+              alt="Flying Promotion" 
+              className="h-12 md:h-14 w-auto object-contain"
+            />
           </motion.a>
 
           {/* Desktop Navigation */}

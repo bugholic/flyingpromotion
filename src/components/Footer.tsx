@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -50,9 +51,11 @@ const Footer = () => {
               className="inline-block mb-6"
               whileHover={{ scale: 1.02 }}
             >
-              <span className="text-3xl font-heading font-bold gradient-text">
-                Flying Promotionn
-              </span>
+              <img 
+                src={logo} 
+                alt="Flying Promotion" 
+                className="h-16 w-auto object-contain"
+              />
             </motion.a>
             <p className="text-muted-foreground mb-6 max-w-sm">
               Elevating brands through innovative digital marketing strategies. 

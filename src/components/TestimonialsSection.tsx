@@ -92,7 +92,7 @@ const TestimonialsSection = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/50"
+                className="bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-border/50"
               >
                 {/* Quote Icon */}
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -130,13 +130,13 @@ const TestimonialsSection = () => {
           {/* Navigation Buttons */}
           <button
             onClick={prevSlide}
-            className="absolute -left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 border border-border/50"
+            className="absolute -left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-card rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 border border-border/50"
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute -right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300 border border-border/50"
+            className="absolute -right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-card rounded-full shadow-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300 border border-border/50"
           >
             <ChevronRight className="w-5 h-5" />
           </button>
@@ -149,7 +149,7 @@ const TestimonialsSection = () => {
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.3 }}
-            className="bg-white rounded-2xl p-8 shadow-lg border border-border/50"
+            className="bg-card rounded-2xl p-8 shadow-lg border border-border/50"
           >
             {/* Quote Icon */}
             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6">
@@ -186,13 +186,13 @@ const TestimonialsSection = () => {
           <div className="flex justify-center gap-4 mt-6">
             <button
               onClick={prevSlide}
-              className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+              className="w-10 h-10 bg-card rounded-full shadow-md flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               <ChevronLeft className="w-5 h-5" />
             </button>
             <button
               onClick={nextSlide}
-              className="w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center hover:bg-primary hover:text-white transition-all duration-300"
+              className="w-10 h-10 bg-card rounded-full shadow-md flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-all duration-300"
             >
               <ChevronRight className="w-5 h-5" />
             </button>

@@ -7,8 +7,8 @@ import logo from "@/assets/logo.jpg";
 const navItems = [
   { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
-  { name: "Testimonials", href: "#testimonials" },
-  { name: "Team", href: "#team" },
+  // { name: "Testimonials", href: "#testimonials" },
+  // { name: "Team", href: "#team" },
   { name: "Contact", href: "#contact" },
 ];
 

@@ -15,7 +15,11 @@ const ContactSection = () => {
   };
 
   const contactInfo = [
-    { icon: MapPin, label: "Address", value: "123 Marketing Ave, Digital City" },
+    {
+      icon: MapPin,
+      label: "Address",
+      value: "123 Marketing Ave, Digital City",
+    },
     { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
     { icon: Mail, label: "Email", value: "hello@flyingpromotionn.com" },
   ];
@@ -25,7 +29,7 @@ const ContactSection = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
       <div className="absolute top-20 right-20 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
-      
+
       <div className="container mx-auto px-4 relative" ref={ref}>
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,9 +48,9 @@ const ContactSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+        <div className="grid gap-12 max-w-6xl mx-auto">
           {/* Contact Form */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -119,7 +123,7 @@ const ContactSection = () => {
                 )}
               </Button>
             </form>
-          </motion.div>
+          </motion.div> */}
 
           {/* Contact Info */}
           <motion.div
@@ -132,7 +136,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-heading font-semibold mb-6">
                 Get in Touch
               </h3>
-              <div className="space-y-6">
+              <div className="flex items-center justify-around">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={info.label}
@@ -145,7 +149,9 @@ const ContactSection = () => {
                       <info.icon className="w-5 h-5 text-primary-foreground" />
                     </div>
                     <div>
-                      <p className="text-sm text-muted-foreground">{info.label}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {info.label}
+                      </p>
                       <p className="font-medium">{info.value}</p>
                     </div>
                   </motion.div>
@@ -161,11 +167,15 @@ const ContactSection = () => {
               <div className="space-y-2 text-muted-foreground">
                 <div className="flex justify-between">
                   <span>Monday - Friday</span>
-                  <span className="font-medium text-foreground">9:00 AM - 6:00 PM</span>
+                  <span className="font-medium text-foreground">
+                    9:00 AM - 6:00 PM
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Saturday</span>
-                  <span className="font-medium text-foreground">10:00 AM - 4:00 PM</span>
+                  <span className="font-medium text-foreground">
+                    10:00 AM - 4:00 PM
+                  </span>
                 </div>
                 <div className="flex justify-between">
                   <span>Sunday</span>

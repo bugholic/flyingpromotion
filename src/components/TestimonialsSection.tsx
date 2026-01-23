@@ -3,41 +3,41 @@ import { useRef, useState } from "react";
 import { ChevronLeft, ChevronRight, Quote, Star } from "lucide-react";
 
 const testimonials = [
-  {
-    name: "Sarah Johnson",
-    role: "CEO, TechStart Inc.",
-    content: "Flying Promotion transformed our brand completely. Our engagement rates increased by 300% in just three months!",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-  },
-  {
-    name: "Michael Chen",
-    role: "Founder, GreenLeaf Co.",
-    content: "The team's creativity and dedication exceeded all expectations. They truly understand modern digital marketing.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-  },
-  {
-    name: "Emily Rodriguez",
-    role: "Marketing Director, Nova Corp",
-    content: "Working with Flying Promotion was a game-changer. Their data-driven approach delivered real, measurable results.",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-  },
-  {
-    name: "David Park",
-    role: "Owner, Urban Eats",
-    content: "Best investment we ever made. Our social media following grew 10x and sales doubled within 6 months.",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-  },
-  {
-    name: "Lisa Thompson",
-    role: "CEO, StyleHub",
-    content: "Incredibly professional and creative team. They brought our vision to life in ways we never imagined possible.",
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
-    rating: 5,
-  },
+  // {
+  //   name: "Sarah Johnson",
+  //   role: "CEO, TechStart Inc.",
+  //   content: "Flying Promotion transformed our brand completely. Our engagement rates increased by 300% in just three months!",
+  //   image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Michael Chen",
+  //   role: "Founder, GreenLeaf Co.",
+  //   content: "The team's creativity and dedication exceeded all expectations. They truly understand modern digital marketing.",
+  //   image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Emily Rodriguez",
+  //   role: "Marketing Director, Nova Corp",
+  //   content: "Working with Flying Promotion was a game-changer. Their data-driven approach delivered real, measurable results.",
+  //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "David Park",
+  //   role: "Owner, Urban Eats",
+  //   content: "Best investment we ever made. Our social media following grew 10x and sales doubled within 6 months.",
+  //   image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  // },
+  // {
+  //   name: "Lisa Thompson",
+  //   role: "CEO, StyleHub",
+  //   content: "Incredibly professional and creative team. They brought our vision to life in ways we never imagined possible.",
+  //   image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face",
+  //   rating: 5,
+  // },
 ];
 
 const TestimonialsSection = () => {

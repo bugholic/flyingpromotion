@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Instagram, Linkedin, ArrowUp } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logo from "/logo-no-bg.png";
 
 const Footer = () => {
   const scrollToTop = () => {

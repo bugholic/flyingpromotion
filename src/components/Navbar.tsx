@@ -2,7 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import logo from "@/assets/logo.jpg";
+import logo from "/logo-no-bg.png";
 
 const navItems = [
   { name: "Home", href: "#home" },

@@ -48,7 +48,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 diagonal-grid-overlay"
       style={{ background: "var(--gradient-hero)" }}
     >
       {/* Background decorations */}

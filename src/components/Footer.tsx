@@ -159,7 +159,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">
           <p className="text-muted-foreground text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Flying Promotionn. All rights reserved.
+            © {new Date().getFullYear()} flying promotion. All rights reserved.
           </p>
           <motion.button
             onClick={scrollToTop}

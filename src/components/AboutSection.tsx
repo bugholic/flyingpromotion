@@ -51,7 +51,7 @@ const AboutSection = () => {
               <span className="gradient-text">We're Your Partners</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-              At Flying Promotionn, we believe in creating campaigns that don't just reach people—they move them. 
+              At flying promotion, we believe in creating campaigns that don't just reach people—they move them. 
               Our team of creative strategists, designers, and data analysts work together to craft 
               marketing experiences that make your brand unforgettable.
             </p>

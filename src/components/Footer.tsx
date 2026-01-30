@@ -13,7 +13,6 @@ const Footer = () => {
       "SEO Optimization",
       "Content Creation",
       "Brand Strategy",
-      "PPC Advertising",
     ],
     company: [
       "About Us",

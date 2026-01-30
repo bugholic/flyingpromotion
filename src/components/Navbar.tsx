@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import logo from "/logo-no-bg.png";
 
 const navItems = [
-  { name: "Home", href: "#home" },
+  { name: "Home", href: "/" },
   { name: "About", href: "#about" },
   // { name: "Testimonials", href: "#testimonials" },
   // { name: "Team", href: "#team" },
@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <motion.a
-            href="#home"
+            href="/"
             className="flex items-center"
             whileHover={{ scale: 1.02 }}
           >

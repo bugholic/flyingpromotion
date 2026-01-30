@@ -18,10 +18,10 @@ const ContactSection = () => {
     {
       icon: MapPin,
       label: "Address",
-      value: "123 Marketing Ave, Digital City",
+      value: "Shop no 11 , katiyar market Lalita Nagar Kolar road Bhopal",
     },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567" },
-    { icon: Mail, label: "Email", value: "hello@flyingpromotion.com" },
+    { icon: Phone, label: "Phone", value: "+91 9039643695" },
+    { icon: Mail, label: "Email", value: "info@flyingpromotion.in" },
   ];
 
   return (
@@ -40,7 +40,7 @@ const ContactSection = () => {
           <span className="text-primary font-semibold text-sm uppercase tracking-wider">
             Contact Us
           </span>
-          <h2 className="text-3xl md:text-5xl font-heading font-bold mt-4">
+          <h2 className="text-2xl md:text-5xl font-heading font-bold mt-4">
             Let's Start <span className="gradient-text">Something Great</span>
           </h2>
           <p className="text-muted-foreground text-lg mt-4 max-w-2xl mx-auto">
@@ -136,7 +136,7 @@ const ContactSection = () => {
               <h3 className="text-2xl font-heading font-semibold mb-6">
                 Get in Touch
               </h3>
-              <div className="flex items-center justify-around">
+              <div className="flex flex-col md:flex-row justify-center gap-8 md:items-center md:justify-around">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={info.label}
@@ -160,7 +160,7 @@ const ContactSection = () => {
             </div>
 
             {/* Business Hours */}
-            <div className="glass-card p-8">
+            {/* <div className="glass-card p-8">
               <h3 className="text-xl font-heading font-semibold mb-4">
                 Business Hours
               </h3>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                   <span className="text-primary font-medium">Closed</span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
       </div>

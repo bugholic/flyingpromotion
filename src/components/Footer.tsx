@@ -9,10 +9,16 @@ const Footer = () => {
 
   const footerLinks = {
     services: [
-      "Social Media Marketing",
-      "SEO Optimization",
-      "Content Creation",
-      "Brand Strategy",
+      "Instagram post & reel creation",
+      "Video editing and video shoot",
+      "Caption, hashtag & script writing",
+      "Complete social media handling",
+      "Paid ads (Instagram/Facebook)",
+      "Lead generation & enquiry setup",
+      "WhatsApp Business setup & handling",
+      "Website building & designing",
+      "Product image shoot",
+      "Graphic designing (menu, posters, banners)",
     ],
     company: [
       "About Us",
@@ -30,10 +36,10 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: Facebook, href: "https://www.facebook.com/share/18NkkhnrXU/", label: "Facebook" },
+    // { icon: Twitter, href: "#", label: "Twitter" },
+    { icon: Instagram, href: "https://www.instagram.com/flyingpromotion?igsh=MXFrY283bXNsaW8wdg==", label: "Instagram" },
+    // { icon: Linkedin, href: "#", label: "LinkedIn" },
   ];
 
   return (
@@ -110,7 +116,7 @@ const Footer = () => {
           </div>
 
           {/* Support */}
-          <div>
+          {/* <div>
             <h4 className="font-heading font-semibold text-lg mb-4">Support</h4>
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
@@ -124,11 +130,11 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
         </div>
 
         {/* Newsletter */}
-        <div className="glass-card p-8 mb-12">
+        {/* <div className="glass-card p-8 mb-12">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h4 className="font-heading font-semibold text-xl mb-2">
@@ -153,7 +159,7 @@ const Footer = () => {
               </motion.button>
             </div>
           </div>
-        </div>
+        </div> */}
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-border">

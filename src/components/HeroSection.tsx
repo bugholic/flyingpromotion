@@ -153,8 +153,8 @@ const HeroSection = () => {
             className="grid grid-cols-3 gap-8 mt-16 max-w-2xl mx-auto"
           >
             {[
-              { value: "150+", label: "Happy Clients" },
-              { value: "500+", label: "Projects Done" },
+              { value: "15+", label: "Happy Clients" },
+              { value: "50+", label: "Projects Done" },
               { value: "98%", label: "Success Rate" },
             ].map((stat, index) => (
               <motion.div
